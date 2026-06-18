@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plans</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .plan-container {
+            height: 35rem;
+            margin-top: 50px;
+            width: 50%;
+            border: 1px solid grey;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 20px;
+            font-size: 29px;
+            padding: 30px;
+            position: relative;
+        }
+
+        .plan-container li {
+            font-size: 25px;
+            margin: 10px;
+        }
+
+        .plan-container button {
+            height: 50px;
+            width: 200px;
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            background-color: rgb(46, 189, 129);
+            font-size: 25px;
+            border: none;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .plan-container button:hover {
+            box-shadow: 0px 0px 10px rgb(81, 211, 113);
+            transform: translateY(-5px);
+        }
+
+        @media(max-width:600px) {
+            .plan-container {
+                width: 95%;
+                font-size: 19px;
+                margin-top: 8px;
+            }
+
+            .plan-container li {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="plan-container">
+        <h1 id="Plan">Primium subscription plan</h1>
+        <h2 id="price">299$</h2>
+        <ul>
+            <li>Lem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem, ipsum dolor amet csdtetur adipisicing elit.</li>
+            <li>em, nka dolor sitara amet consectetur adipskfjisicing elit.</li>
+            <li>Lore, ipsum dolor sites amet consectetur adipisicing elit.</li>
+            <li>Loem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+        </ul>
+        <button>Enter</button>
+    </div>
+</body>
+<script src="plans.js"></script>
+
+</html>
